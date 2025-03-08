@@ -1,0 +1,24 @@
+{
+  "name": "velora_test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "esbuild": "^0.21.5",
+    "express": "^4.21.2",
+    "nanoid": "^3.3.9",
+    "picocolors": "^1.1.1",
+    "postcss": "^8.5.3",
+    "prettier": "^3.5.3",
+    "rollup": "^4.35.0",
+    "source-map-js": "^1.2.1",
+    "vite": "^5.4.14"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
