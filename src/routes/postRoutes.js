@@ -1,22 +1,14 @@
 const express = require('express');
 
+const { getPosts } = require("../controllers/postController")
+
 const postRouter = express.Router()
 
-const posts = [
-    {
-        title: "post 1",
-        body: "post 1 body",
-        is_published: false
-    },
-    {
-        title: "post 2",
-        body: "post 2 body",
-        is_published: false
-    }
-]
-
+// GET - /posts
 postRouter.get ("/", (req, res) => {
+    const posts = getPosts()
     res.json(posts)
 })
 
 module.exports = postRouter
+// default export
