@@ -3,6 +3,7 @@ const express = require('express');
 const mongoose = require("mongoose");
 
 const postRouter = require("./routes/postRoutes")
+const categoryRouter = require("./routes/categoryRoutes")
 
 const app = express();
 
@@ -20,8 +21,9 @@ app.get("/hello", (req, res) => {
     })
 })
 
-app.use("/posts", postRouter)
 // when route "/" is called it will automatically refer to /posts (post router)
+app.use("/posts", postRouter)
+app.use("/categories", categoryRouter)
 
 app.listen(3000, async () => {
     console.log("server started")
